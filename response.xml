@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+    <twitter_id>229635921</twitter_id>
+    <twitter_screen_name>jesseendo</twitter_screen_name>
+    <score>
+      <kscore>44.82</kscore>
+      <slope>0.57</slope>
+      <description>is effectively using social media to influence their network across a variety of topics</description>
+      <kclass_id>12</kclass_id>
+      <kclass>Networker</kclass>
+      <kclass_description>You know how to connect to the right people and share what&apos;s important to your audience. You generously share your network to help your followers. You have a high level of engagement and an influential audience.</kclass_description>
+      <kscore_description>is effectively using social media to influence their network across a variety of topics</kscore_description>
+      <network_score>50.33</network_score>
+      <amplification_score>15.43</amplification_score>
+      <true_reach>26</true_reach>
+      <delta_1day>6.34</delta_1day>
+      <delta_5day>17.17</delta_5day>
+    </score>
+  </user>
+  <user>
+    <twitter_id>357286752</twitter_id>
+    <twitter_screen_name>sfbellejar</twitter_screen_name>
+    <score>
+      <kscore>15.06</kscore>
+      <slope>0.33</slope>
+      <description>needs to engage more with others or be more active to gain influence</description>
+      <kclass_id>1</kclass_id>
+      <kclass>Observer</kclass>
+      <kclass_description>You don&apos;t share very much, but you follow the social web more than you let on. You may just enjoy observing more than sharing or you&apos;re checking this stuff out before jumping in full-force.</kclass_description>
+      <kscore_description>needs to engage more with others or be more active to gain influence</kscore_description>
+      <network_score>12.57</network_score>
+      <amplification_score>11.12</amplification_score>
+      <true_reach>2</true_reach>
+      <delta_1day>0</delta_1day>
+      <delta_5day>0.03</delta_5day>
+    </score>
+  </user>
+</users>
