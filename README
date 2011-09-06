@@ -1,0 +1,51 @@
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the 'Software'), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+The Software shall be used for Good, not Evil.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+/**
+ * KloutServices is a wrapper class around the Klout (www.klout.com) Web Services API.
+ * Documentation of the API is available from developer.klout.com.  Registration for, or
+ * availability of, an API key from Mashery/Klout is required to use this class.  The author
+ * is not affiliated with Klout in any way.
+ * 
+ * KloutServices includes a public inner class called KloutUser.  This class
+ * is populated with the information returned by web calls to the Klout API.
+ * Currently, only the User method (developer.klout.com/iodocs) is implemented.
+ * 
+ * Usage:
+ * You must pass your API key when instantiating a new instance of KloutServices
+ * <code>KloutServices klout = new KloutServices('xxxxxxxxxxxxxx');</code>
+ *
+ * To just get a Klout score based on a Twitter handle:
+ * <code>Decimal score = klout.getKlout('jesseendo');</code>
+ *
+ * To get an entire User Profile returned, as a KloutUser object:
+ * <code> KloutUser me = klout.getUserProfile('jesseendo');</code> 
+ *
+ * To get a List of User Profiles, as a List of KloutUser objects:
+ * <code> List<KloutUser> us = klout.getUserProfiles(String[] {'jesseendo', 'benioff');</code>
+ *
+ * @author Jesse Endo (Twitter: @jesseendo)
+ * @version 0.1
+ */
+ 
+1) Setup
+	- You must add the Klout API endpoint to your org's Remote Site Settings before use
+		- From Setup -> Security Controls -> Remote Site Settings, add New with URL:
+			"http://api.klout.com"
