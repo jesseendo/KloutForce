@@ -65,16 +65,6 @@ SOFTWARE.
     }
     
     /**
-     * Set the API key after instantiation
-     *
-     * @param key a Klout API key
-     */
-    public void setKey( String key )
-    {
-        this.API_KEY = key;
-    }
-    
-    /**
      * Just get Klout score for a single User
      *
      * @param handle a Twitter username/handle
@@ -112,7 +102,7 @@ SOFTWARE.
     /**
      * Private inner method to construct URL strings
      */
-    private String constructURL( String action, List<String> users )
+    public String constructURL( String action, List<String> users )
     {
         // Leave extensible to incorporate future API calls
         String url = ENDPOINT + action + API_KEY;
@@ -125,7 +115,7 @@ SOFTWARE.
     /**
      * Junk helper method
      */
-    private String createCommaSeparatedList( List<String> users )
+    public String createCommaSeparatedList( List<String> users )
     {
         String listing = '';
         Iterator<String> i = users.iterator();
@@ -249,6 +239,4 @@ SOFTWARE.
                 params.put( node.getName(), node.getText() );
         }
     }
-    
-    // TODO: TEST CASES!
 }
