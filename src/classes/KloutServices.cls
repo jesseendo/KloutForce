@@ -98,6 +98,20 @@ SOFTWARE.
         return makeRequest( USER_URL, handles );
     }
     
+    /**
+     * Get Profile details for a Set of Users
+     *
+     * @param handles a Set of Twitter usernames/handles
+     * @return a List of KloutUser objects with the specified User's Klout Profile details
+     */
+    public List<KloutUser> getUserProfiles( Set<String> handles )
+    {   
+    	List<String> userHandles = new List<String>();
+    	userHandles.addAll( handles );
+    	
+        return makeRequest( USER_URL, userHandles );
+    }
+    
     
     /**
      * Private inner method to construct URL strings
@@ -167,8 +181,8 @@ SOFTWARE.
         request.setEndpoint( endpoint );
         request.setMethod( 'GET' );
         
-        return http.send( request );
-    }
+    	return http.send( request );
+    } 
     
     
     /**
@@ -220,7 +234,7 @@ SOFTWARE.
         /**
          * Constructor
          */
-        KloutUser(DOM.XMLNode node)
+        public KloutUser(DOM.XMLNode node)
         {
             nodeToParam(node);
         }
@@ -239,4 +253,5 @@ SOFTWARE.
                 params.put( node.getName(), node.getText() );
         }
     }
+    
 }
