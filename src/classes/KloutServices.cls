@@ -161,7 +161,7 @@ SOFTWARE.
         DOM.Document doc = response.getBodyDocument();
         
         List<KloutUser> userObjects = new List<KloutUser>();
-        for(Dom.XMLNode user : doc.getRootElement().getChildElements()) {
+        for( Dom.XMLNode user : doc.getRootElement().getChildElements() ) {
             KloutUser userObject = new KloutUser(user);
             userObjects.add( userObject );
         }
